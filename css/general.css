@@ -1,0 +1,64 @@
+body,
+html {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: auto;
+}
+
+.nav-room {
+    height: 40.5px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: saturate(1.8) blur(20px);
+    -webkit-backdrop-filter: saturate(1.8) blur(20px);
+    text-align: center;
+    font-size: 0.8em;
+}
+
+nav .logo {
+    color: #d4d4d4;
+}
+
+nav a {
+    color: #bdbdbd;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1em 1.5em 1em 1.5em;
+    transition: 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+.img-cover {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.iphone14pro-img {
+    background-image: url(/img/iphone14pro_background.jpg);
+    height: 700px;
+}
+
+.iphone14-img {
+    background-image: url(/img/iphone14_background.jpg);
+    height: 700px;
+}
+
+@media (max-width: 768px) {
+    .iphone14pro-img {
+        background-image: url(/img/iphone14pro_background_mobile.jpg);
+        height: 500px;
+    }
+    .iphone14-img {
+        background-image: url(/img/iphone14_background_mobile.jpg);
+        height: 500px;
+    }
+}
