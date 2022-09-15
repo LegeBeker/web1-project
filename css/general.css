@@ -1,11 +1,9 @@
-body,
-html {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    margin: auto;
-}
-
 .nav-room {
     height: 40.5px;
+}
+
+.hamburger {
+    display: none;
 }
 
 nav {
@@ -21,19 +19,18 @@ nav {
 }
 
 nav .logo {
-    color: #d4d4d4;
+    color: var(--lightgrey);
 }
 
 nav a {
-    color: #bdbdbd;
-    text-decoration: none;
+    color: var(--grey);
     display: inline-block;
     padding: 1em 1.5em 1em 1.5em;
-    transition: 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
 }
 
 nav a:hover {
-    color: #ffffff;
+    color: var(--white);
 }
 
 .img-cover {
@@ -50,15 +47,4 @@ nav a:hover {
 .iphone14-img {
     background-image: url(/img/iphone14_background.jpg);
     height: 700px;
-}
-
-@media (max-width: 768px) {
-    .iphone14pro-img {
-        background-image: url(/img/iphone14pro_background_mobile.jpg);
-        height: 500px;
-    }
-    .iphone14-img {
-        background-image: url(/img/iphone14_background_mobile.jpg);
-        height: 500px;
-    }
 }
