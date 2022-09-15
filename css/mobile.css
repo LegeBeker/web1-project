@@ -1,0 +1,63 @@
+.side-menu {
+    display: none;
+}
+
+.hamburger .active {
+    display: none;
+}
+
+.mobile-nav {
+    background-color: black;
+}
+
+.side-menu:checked .mobile-nav{
+    max-height: 100%;
+}
+
+.side-menu:checked ~ .hamburger .inactive {
+    display: none;
+}
+
+.side-menu:checked ~ .hamburger .active {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .nav-room {
+        height: 38.5px;
+    }
+
+    nav {
+        height: 38.5px;
+    }
+
+    nav .logo {
+        margin-top: 5px;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .bag {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    nav a:not(.mobile, .hamburger) {
+        display: none;
+    }
+
+    .iphone14pro-img {
+        height: 500px;
+    }
+
+    .iphone14-img {
+        height: 500px;
+    }
+}
