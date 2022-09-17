@@ -40,11 +40,11 @@ nav a:hover {
 }
 
 .iphone14pro-img {
-    background-image: url(/img/iphone14pro_background.jpg);
+    background-image: url('../img/iphone14pro_background.jpg');
     height: 700px;
 }
 
 .iphone14-img {
-    background-image: url(/img/iphone14_background.jpg);
+    background-image: url('../img/iphone14_background.jpg');
     height: 700px;
 }
