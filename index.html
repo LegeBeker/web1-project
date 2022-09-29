@@ -26,9 +26,9 @@
 </head>
 
 <body>
-  <nav>
+  <nav class="infront">
     <input class="side-menu" type="checkbox" id="side-menu" />
-    <label class="hamburger" for="side-menu">
+    <label class="hamburger infront" for="side-menu">
       <a class="inactive mobile">
         <i class="fa-solid fa-bars"></i>
       </a>
@@ -36,7 +36,8 @@
         <i class="fa-solid fa-times"></i>
       </a>
     </label>
-    <a class="logo mobile" href='#'>
+    <div class="mobile-nav"></div>
+    <a class="logo mobile infront" href='#'>
       <i class="fa-brands fa-apple fa-xl"></i>
     </a>
     <a href='mac.html'>Mac</a>
@@ -49,12 +50,10 @@
     <a>
       <i class="fas fa-search"></i>
     </a>
-    <a class="bag mobile">
+    <a class="bag mobile infront">
       <i class="fas fa-bag-shopping"></i>
     </a>
   </nav>
-
-  <div class="mobile-nav"></div>
 
   <div class="nav-room"></div>
 

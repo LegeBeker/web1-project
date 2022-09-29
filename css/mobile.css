@@ -8,10 +8,15 @@
 
 .mobile-nav {
     background-color: black;
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    transition: all 0.5s ease-in-out;
 }
 
-.side-menu:checked .mobile-nav{
-    max-height: 100%;
+.side-menu:checked ~ .mobile-nav {
+    height: 100%;
+    transition: all 0.5s ease-in-out;
 }
 
 .side-menu:checked ~ .hamburger .inactive {
@@ -42,9 +47,17 @@
         left: 0;
     }
 
-    .bag {
+    .bag, .logo {
         display: block;
         position: absolute;
+    }
+
+    .logo {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .bag {
         top: 0;
         right: 0;
     }
