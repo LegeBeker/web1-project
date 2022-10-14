@@ -1,4 +1,4 @@
-:root{
+:root {
     --grey: #bdbdbd;
     --lightgrey: #d4d4d4;
     --white: #ffffff;
@@ -18,4 +18,9 @@ body {
 a {
     text-decoration: none;
     cursor: pointer;
+}
+
+ul,
+li {
+    list-style: none;
 }

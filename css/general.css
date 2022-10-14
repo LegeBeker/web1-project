@@ -1,16 +1,4 @@
-.nav-room {
-    height: 40.5px;
-}
-
-.infront {
-    z-index: 100;
-}
-
-.hamburger {
-    display: none;
-}
-
-nav {
+header {
     position: fixed;
     top: 0;
     width: 100%;
@@ -19,20 +7,25 @@ nav {
     -webkit-backdrop-filter: saturate(1.8) blur(20px);
     text-align: center;
     font-size: 0.8em;
+    height: 40px;
 }
 
-nav .logo {
+.hamb {
+    display: none;
+}
+
+.logo {
     color: var(--lightgrey);
 }
 
-nav a {
+header a {
     color: var(--grey);
     display: inline-block;
     padding: 1em 1.5em 1em 1.5em;
     transition: color 0.3s ease-in-out;
 }
 
-nav a:hover {
+header a:hover {
     color: var(--white);
 }
 
@@ -42,12 +35,12 @@ nav a:hover {
     background-repeat: no-repeat;
 }
 
-.iphone14pro-img {
+.background-first-img {
     background-image: url('../img/iphone14pro_background.jpg');
     height: 700px;
 }
 
-.iphone14-img {
+.background-second-img {
     background-image: url('../img/iphone14_background.jpg');
     height: 700px;
 }

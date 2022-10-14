@@ -2,59 +2,29 @@
     display: none;
 }
 
-.hamburger .active {
+.hamb .active {
     display: none;
 }
 
-.mobile-nav {
-    background-color: black;
-    height: 0%;
-    width: 100%;
-    position: fixed;
-    transition: all 0.5s ease-in-out;
-}
-
-.side-menu:checked ~ .mobile-nav {
-    height: 100vh;
-    transition: all 0.5s ease-in-out;
-}
-
-.side-menu:checked ~ .hamburger .inactive {
+.side-menu:checked~.hamb .inactive {
     display: none;
 }
 
-.side-menu:checked ~ .hamburger .active {
+.side-menu:checked~.hamb .active {
     display: block;
 }
 
 @media (max-width: 768px) {
-    .nav-room {
-        height: 38.5px;
-    }
-
-    nav {
-        height: 38.5px;
-    }
-
-    nav .logo {
-        margin-top: 5px;
-    }
-
-    .hamburger {
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-
-    .bag, .logo {
-        display: block;
-        position: absolute;
-    }
-
     .logo {
+        margin-top: 5px;
         left: 50%;
         transform: translateX(-50%);
+    }
+
+    .bag,
+    .logo {
+        display: block;
+        position: absolute;
     }
 
     .bag {
@@ -62,8 +32,27 @@
         right: 0;
     }
 
-    nav a:not(.mobile, .hamburger) {
+    nav {
+        background-color: black;
         display: none;
+        margin-top: 40px;
+        height: 0%;
+        width: 100%;
+        position: fixed;
+        transition: height 0.5s ease-in-out;
+    }
+
+    .hamb {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .side-menu:checked~nav {
+        height: 100vh;
+        display: block;
+        transition: height 0.5s ease-in-out;
     }
 
     .iphone14pro-img {
@@ -76,7 +65,7 @@
 }
 
 @media (min-width: 768px) {
-    .mobile-nav {
-        display: none;
+    .menu li {
+        float: left;
     }
 }
