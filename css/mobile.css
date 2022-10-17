@@ -1,11 +1,5 @@
-.side-menu {
-    display: none;
-}
-
-.hamb .active {
-    display: none;
-}
-
+.hamb .active,
+.side-menu,
 .side-menu:checked~.hamb .inactive {
     display: none;
 }
@@ -15,21 +9,28 @@
 }
 
 @media (max-width: 768px) {
+
+    .bag,
+    .logo,
+    .hamb {
+        display: block;
+        position: absolute;
+    }
+
     .logo {
         margin-top: 5px;
         left: 50%;
         transform: translateX(-50%);
     }
 
-    .bag,
-    .logo {
-        display: block;
-        position: absolute;
-    }
-
     .bag {
         top: 0;
         right: 0;
+    }
+
+    .hamb {
+        top: 0;
+        left: 0;
     }
 
     nav {
@@ -42,23 +43,13 @@
         transition: height 0.5s ease-in-out;
     }
 
-    .hamb {
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-
     .side-menu:checked~nav {
         height: 100vh;
         display: block;
         transition: height 0.5s ease-in-out;
     }
 
-    .iphone14pro-img {
-        height: 500px;
-    }
-
+    .iphone14pro-img,
     .iphone14-img {
         height: 500px;
     }

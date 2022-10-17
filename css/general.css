@@ -1,12 +1,17 @@
 header {
+    display: flex;
     position: fixed;
+    justify-content: center;
     top: 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     backdrop-filter: saturate(1.8) blur(20px);
     -webkit-backdrop-filter: saturate(1.8) blur(20px);
-    text-align: center;
     font-size: 0.8em;
+    height: 40px;
+}
+
+.nav-room {
     height: 40px;
 }
 
@@ -15,6 +20,7 @@ header {
 }
 
 .logo {
+    margin-top: 6px;
     color: var(--lightgrey);
 }
 
