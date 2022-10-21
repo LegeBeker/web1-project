@@ -46,7 +46,6 @@
         margin-top: 40px;
         width: 100%;
         position: fixed;
-        transition: opacity 0.2s ease-in-out;
     }
 
     .side-menu:checked~nav {
@@ -92,4 +91,9 @@
         padding-top: 50px;
     }
 
+    form>* {
+        border: medium none;
+        width: 80%;
+        max-width: 80%;
+    }
 }
