@@ -49,8 +49,8 @@
         transition: height 0.5s ease-in-out;
     }
 
-    .iphone14pro-img,
-    .iphone14-img {
+    .background-first-img,
+    .background-second-img {
         height: 500px;
     }
 }
