@@ -37,19 +37,55 @@ header a:hover {
     background-repeat: no-repeat;
 }
 
+.img-cover h2 {
+    font-size: 56px;
+    font-weight: 500;
+}
+
+.img-cover p {
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.img-cover a {
+    font-size: 21px;
+    color: var(--blue);
+    line-height: 2;
+}
+
+.img-cover a::after {
+    content: " >";
+}
+
+.background-first-img,
+.background-second-img,
+.background-third-img {
+    height: 700px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
 .background-first-img {
     background-image: url('../img/ipad10_background.jpg');
-    height: 700px;
+    justify-content: center;
+    color: var(--darkdarkgrey);
+    padding-left: 300px;
 }
 
 .background-second-img {
     background-image: url('../img/iphone14pro_background.jpg');
-    height: 700px;
+    justify-content: flex-start;
+    color: var(--white);
+    padding-top: 125px;
 }
 
 .background-third-img {
     background-image: url('../img/iphone14_background.jpg');
-    height: 700px;
+    justify-content: flex-start;
+    color: var(--darkdarkgrey);
+    padding-top: 125px;
 }
 
 footer {
@@ -60,13 +96,5 @@ footer {
 }
 
 footer a {
-    color: blue
-}
-
-.copyright {
-    text-align: left;
-}
-
-.language-select {
-    text-align: right;
+    color: var(--blue);
 }
