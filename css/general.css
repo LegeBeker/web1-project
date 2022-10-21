@@ -22,6 +22,10 @@ header a:hover {
     color: var(--white);
 }
 
+main {
+    margin-top: 40px;
+}
+
 .hamb {
     display: none;
 }
