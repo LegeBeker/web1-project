@@ -30,6 +30,17 @@ main {
     display: none;
 }
 
+footer {
+    padding: 20px 10% 20px 10%;
+    font-size: 15px;
+    background-color: var(--lightlightgrey);
+    color: var(--darkgrey);
+}
+
+footer a {
+    color: var(--blue);
+}
+
 .logo {
     margin-top: 6px;
     color: var(--lightgrey);
@@ -90,15 +101,4 @@ main {
     justify-content: flex-start;
     color: var(--darkdarkgrey);
     padding-top: 125px;
-}
-
-footer {
-    padding: 20px 10% 20px 10%;
-    font-size: 15px;
-    background-color: var(--lightlightgrey);
-    color: var(--darkgrey);
-}
-
-footer a {
-    color: var(--blue);
 }

@@ -8,6 +8,12 @@
     display: block;
 }
 
+@media (min-width: 768px) {
+    .menu li {
+        float: left;
+    }
+}
+
 @media (max-width: 768px) {
 
     .bag,
@@ -86,10 +92,4 @@
         padding-top: 50px;
     }
 
-}
-
-@media (min-width: 768px) {
-    .menu li {
-        float: left;
-    }
 }
