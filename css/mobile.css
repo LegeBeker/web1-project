@@ -50,9 +50,11 @@
     }
 
     .background-first-img,
-    .background-second-img {
+    .background-second-img,
+    .background-third-img {
         height: 500px;
     }
+
 }
 
 @media (min-width: 768px) {

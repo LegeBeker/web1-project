@@ -1,7 +1,10 @@
 :root {
+    --darkgrey: #6e6e73;
     --grey: #bdbdbd;
+    --lightlightgrey: #f5f5f7;
     --lightgrey: #d4d4d4;
     --white: #ffffff;
+    --blue: #06c;
 }
 
 * {
