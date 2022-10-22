@@ -14,7 +14,7 @@ header {
 header a {
     color: var(--grey);
     display: inline-block;
-    padding: 1em 1.5em 1em 1.5em;
+    padding: 1em 1.5em;
     transition: color 0.3s ease-in-out;
 }
 
@@ -31,7 +31,7 @@ main {
 }
 
 footer {
-    padding: 20px 10% 20px 10%;
+    padding: 20px 10%;
     font-size: 15px;
     background-color: var(--lightlightgrey);
     color: var(--darkgrey);
@@ -80,6 +80,7 @@ footer a {
     align-items: center;
     flex-direction: column;
     text-align: center;
+    padding: 0 1;
 }
 
 .background-first-img {
@@ -103,16 +104,33 @@ footer a {
     padding-top: 125px;
 }
 
+.sub-menu {
+    padding: 20 20%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sub-menu button {
+    border: none;
+    padding: 5px 10px;
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 10% 20px 10%;
+    padding: 20px 10%;
     background-color: var(--lightgrey);
 }
 
 form>* {
-    border: medium none;
+    border: none;
     width: 50%;
     max-width: 50%;
 }
@@ -124,7 +142,7 @@ form>*:not(:last-child) {
 form input,
 form textarea,
 form button {
-    padding: 10px 20px 10px 20px;
+    padding: 10px 20px;
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     border-radius: 5px;

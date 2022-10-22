@@ -42,6 +42,7 @@
     nav {
         background-color: black;
         height: 100vh;
+        display: none;
         opacity: 0;
         margin-top: 40px;
         width: 100%;
@@ -49,6 +50,7 @@
     }
 
     .side-menu:checked~nav {
+        display: block;
         opacity: 1;
         transition: opacity 0.2s ease-in-out;
     }
@@ -77,6 +79,13 @@
     .img-cover a {
         font-size: 21px;
         color: var(--blue);
+        transition: 0.2s ease-in-out;
+    }
+
+    .img-cover a:hover {
+        opacity: 0.8;
+        transform: scale(0.95);
+        transition: 0.2s ease-in-out;
     }
 
     .background-first-img {
@@ -91,9 +100,19 @@
         padding-top: 50px;
     }
 
+    .sub-menu {
+        padding: 10 20;
+    }
+
     form>* {
         border: medium none;
         width: 80%;
         max-width: 80%;
+    }
+}
+
+@media (max-width:375px) {
+    .background-first-img {
+        padding-left: 0;
     }
 }
