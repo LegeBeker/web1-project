@@ -92,9 +92,7 @@
         flex-direction: column;
     }
 
-    form>* {
-        border: medium none;
-        width: 80%;
-        max-width: 80%;
+    form {
+        flex-direction: column;
     }
 }

@@ -191,34 +191,49 @@ button {
     cursor: pointer;
 }
 
+.background-support-img {
+    background-image: url('../img/support_background.jpg');
+    justify-content: center;
+    color: var(--white);
+    height: 400px;
+}
+
 form {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
     padding: 20px 10%;
     background-color: var(--lightgrey);
 }
 
 form>* {
-    border: none;
-    width: 50%;
-    max-width: 50%;
+    width: 98%;
+    margin: 1%;
 }
 
+.form-container>* {
+    border: none;
+    width: 100%;
+}
+
+.form-container>*:not(:last-child),
 form>*:not(:last-child) {
     margin-bottom: 20px;
 }
 
-form input,
-form textarea,
-form button {
+.form-container input,
+.form-container textarea,
+.form-container button {
     padding: 10px 20px;
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     border-radius: 5px;
 }
 
-form button {
+.form-container textarea {
+    height: 250px;
+}
+
+.form-container button {
     background-color: var(--blue);
     color: var(--white);
     cursor: pointer;
