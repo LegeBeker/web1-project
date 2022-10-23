@@ -85,7 +85,9 @@
         padding: 10 20;
     }
 
-    .img-text {
+    .img-text.img-left,
+    .img-text.img-right,
+    .text-container {
         flex-direction: column;
     }
 
