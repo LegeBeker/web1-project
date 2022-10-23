@@ -1,3 +1,10 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
 header {
     display: flex;
     position: fixed;
@@ -35,6 +42,7 @@ footer {
     font-size: 15px;
     background-color: var(--lightlightgrey);
     color: var(--darkgrey);
+    margin-top: auto;
 }
 
 footer a {
