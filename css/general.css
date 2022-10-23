@@ -151,6 +151,10 @@ footer a {
     flex-direction: row-reverse;
 }
 
+.img-text img {
+    mix-blend-mode: multiply;
+}
+
 .text-container {
     display: flex;
     justify-content: center;
