@@ -143,12 +143,32 @@ footer a {
     margin: 10px;
 }
 
-.img-text .img-left {
+.img-text.img-left {
     flex-direction: row;
 }
 
-.img-text .img-right {
+.img-text.img-right {
     flex-direction: row-reverse;
+}
+
+.text-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+}
+
+.text-container>* {
+    background-color: var(--white);
+    padding: 20px;
+    margin: 20px;
+    flex: 1;
+}
+
+.text-container>*>* {
+    margin: 5px;
 }
 
 .box-ipad-end {
@@ -168,6 +188,12 @@ footer a {
     border-radius: 50px;
     box-shadow: 20px 20px 60px #bebebe,
         -20px -20px 60px #ffffff;
+}
+
+.blue-pink {
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(90deg, #2ca2b4, #5598de 24%, #7f87ff 45%, #f65aad 76%, #ec3d43);
 }
 
 .sub-menu button,
