@@ -205,6 +205,13 @@ button {
     height: 400px;
 }
 
+.background-about-img {
+    background-image: url('../img/about_background.jpg');
+    justify-content: center;
+    color: var(--white);
+    height: 400px;
+}
+
 form {
     display: flex;
     flex-direction: row;
