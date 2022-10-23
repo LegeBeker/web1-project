@@ -104,6 +104,10 @@
         padding: 10 20;
     }
 
+    .img-text {
+        flex-direction: column;
+    }
+
     form>* {
         border: medium none;
         width: 80%;

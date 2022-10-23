@@ -120,7 +120,28 @@ footer a {
     justify-content: space-between;
 }
 
-.sub-menu button {
+.img-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10%;
+}
+
+.img-text>*,
+.img-text>*>* {
+    margin: 10px;
+}
+
+.img-text .img-left {
+    flex-direction: row;
+}
+
+.img-text .img-right {
+    flex-direction: row-reverse;
+}
+
+.sub-menu button,
+button {
     border: none;
     padding: 5px 10px;
     background-color: var(--blue);
