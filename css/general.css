@@ -33,10 +33,6 @@ main {
     margin-top: 40px;
 }
 
-.hamb {
-    display: none;
-}
-
 footer {
     padding: 20px 10%;
     font-size: 15px;
@@ -58,48 +54,38 @@ footer a {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-
-.img-cover h2,
-.box-ipad-end h2 {
-    font-size: 56px;
-    font-weight: 500;
-}
-
-.img-cover p,
-.box-ipad-end p {
-    font-size: 28px;
-    font-weight: 300;
-}
-
-.img-cover a,
-.box-ipad-end a {
-    font-size: 21px;
-    color: var(--blue);
-    transition: 0.2s ease-in-out;
-}
-
-.img-cover a::after,
-.box-ipad-end a::after {
-    content: " >";
-}
-
-.img-cover a:hover,
-.box-ipad-end a:hover {
-    opacity: 0.8;
-    transform: scale(0.95);
-    transition: 0.2s ease-in-out;
-}
-
-.background-first-img,
-.background-second-img,
-.background-third-img {
     height: 700px;
     display: flex;
     align-items: center;
     flex-direction: column;
     text-align: center;
     padding: 0 1;
+}
+
+.display-text h2 {
+    font-size: 56px;
+    font-weight: 500;
+}
+
+.display-text p {
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.display-text a {
+    font-size: 21px;
+    color: var(--blue);
+    transition: 0.2s ease-in-out;
+}
+
+.display-text a::after {
+    content: " >";
+}
+
+.display-text a:hover {
+    opacity: 0.8;
+    transform: scale(0.95);
+    transition: 0.2s ease-in-out;
 }
 
 .background-first-img {
@@ -139,7 +125,8 @@ footer a {
 }
 
 .img-text>*,
-.img-text>*>* {
+.img-text>*>*,
+.text-container>*>* {
     margin: 10px;
 }
 
@@ -149,10 +136,6 @@ footer a {
 
 .img-text.img-right {
     flex-direction: row-reverse;
-}
-
-.img-text img {
-    mix-blend-mode: multiply;
 }
 
 .text-container {
@@ -169,10 +152,6 @@ footer a {
     padding: 20px;
     margin: 20px;
     flex: 1;
-}
-
-.text-container>*>* {
-    margin: 5px;
 }
 
 .box-ipad-end {
@@ -194,9 +173,10 @@ footer a {
         -20px -20px 60px #ffffff;
 }
 
-.blue-pink {
-    background-clip: text;
+.blue-pink-text {
     color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
     background-image: linear-gradient(90deg, #2ca2b4, #5598de 24%, #7f87ff 45%, #f65aad 76%, #ec3d43);
 }
 

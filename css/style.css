@@ -31,6 +31,10 @@ li {
     text-align: center;
 }
 
+li {
+    float: left;
+}
+
 h1 {
     font-size: 56px;
     font-weight: 500;
