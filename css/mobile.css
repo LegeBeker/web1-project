@@ -62,41 +62,22 @@
 
     .background-first-img,
     .background-second-img,
-    .background-third-img {
+    .background-third-img,
+    .background-ipad-end-img {
         height: 500px;
     }
 
-    .img-cover h2 {
-        font-size: 56px;
-        font-weight: 500;
-    }
-
-    .img-cover p {
-        font-size: 28px;
-        font-weight: 300;
-    }
-
-    .img-cover a {
-        font-size: 21px;
-        color: var(--blue);
-        transition: 0.2s ease-in-out;
-    }
-
-    .img-cover a:hover {
-        opacity: 0.8;
-        transform: scale(0.95);
-        transition: 0.2s ease-in-out;
+    .box-ipad-end p {
+        font-size: 20px;
     }
 
     .background-first-img {
         padding-left: 225px;
     }
 
-    .background-second-img {
-        padding-top: 50px;
-    }
-
-    .background-third-img {
+    .background-second-img,
+    .background-third-img,
+    .background-ipad-end-img {
         padding-top: 50px;
     }
 
