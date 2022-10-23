@@ -180,7 +180,7 @@ footer a {
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-image: url('https://www.apple.com/v/ipad/home/cb/images/overview/accessories__gdpezee1naai_medium.jpg');
+    background-image: url('../img/ipad/accessories.jpg');
     background-size: contain;
     background-position: center bottom;
     background-repeat: no-repeat;
