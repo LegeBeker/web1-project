@@ -9,12 +9,6 @@
     display: block;
 }
 
-@media (max-width:500px) {
-    .background-first-img {
-        padding-left: 0;
-    }
-}
-
 @media (max-width: 768px) {
     .menu li {
         float: none;
@@ -89,5 +83,12 @@
     form {
         flex-direction: column;
         text-align: center;
+    }
+}
+
+@media (max-width:500px) {
+    .background-first-img {
+        padding-left: 0px;
+        text-shadow: 0 0 10px white;
     }
 }
