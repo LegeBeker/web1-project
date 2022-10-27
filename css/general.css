@@ -53,7 +53,6 @@ h1 {
 }
 
 .logo {
-    margin-top: 6px;
     color: var(--lightgrey);
 }
 
@@ -117,7 +116,7 @@ h1 {
 }
 
 .sub-menu {
-    padding: 20 20%;
+    padding: 20px 20%;
     font-size: 20px;
     display: flex;
     align-items: center;
