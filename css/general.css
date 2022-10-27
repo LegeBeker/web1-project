@@ -68,6 +68,10 @@ h1 {
     padding: 0 1;
 }
 
+.display-text>* {
+    animation: 1s ease-in 0s 1 fadeIn;
+}
+
 .display-text h2 {
     font-size: 56px;
     font-weight: 500;
@@ -142,6 +146,7 @@ h1 {
 
 .img-text.img-right {
     flex-direction: row-reverse;
+    text-align: end;
 }
 
 .text-container {
@@ -187,7 +192,6 @@ h1 {
     background-image: linear-gradient(90deg, #2ca2b4, #5598de 24%, #7f87ff 45%, #f65aad 76%, #ec3d43);
 }
 
-.sub-menu button,
 button {
     border: none;
     padding: 5px 10px;
@@ -195,6 +199,12 @@ button {
     color: var(--white);
     border-radius: 15px;
     cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: var(--lightblue);
+    transition: 0.2s ease-in-out;
 }
 
 .background-support-img {
@@ -250,4 +260,14 @@ form>*:not(:last-child) {
     background-color: var(--blue);
     color: var(--white);
     cursor: pointer;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }

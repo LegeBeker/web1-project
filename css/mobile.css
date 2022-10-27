@@ -55,12 +55,10 @@
     .side-menu:checked~nav {
         display: block;
         opacity: 1;
-        transition: opacity 0.2s ease-in-out;
     }
 
     header:has(.side-menu:checked) {
         background-color: rgba(0, 0, 0, 1);
-        transition: 0.2s ease-in-out;
     }
 
     .img-cover {
@@ -82,16 +80,14 @@
     }
 
     .sub-menu {
-        padding: 10 20;
+        padding: 10px 20px;
     }
 
     .img-text.img-left,
     .img-text.img-right,
-    .text-container {
-        flex-direction: column;
-    }
-
+    .text-container,
     form {
         flex-direction: column;
+        text-align: center;
     }
 }
